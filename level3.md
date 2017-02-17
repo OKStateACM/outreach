@@ -35,6 +35,13 @@ well as some basic javascript in level 1.
 </script>
 ```
 
+We can also use some tools to help us. Today we're going to use "jsfiddle". a
+website aimed to make coding and sharing small snippets of code easy.
+
+Follow this link:
+
+[https://jsfiddle.net/mt55g1a2/](https://jsfiddle.net/mt55g1a2/)
+
 ## drawing stuff on the canvas
 
 We learned a few instructions to tell the computer to draw things on the canvas
