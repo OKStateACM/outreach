@@ -78,6 +78,9 @@ canvas for a bit and get the hang of it. Notice that the computer always does
 *exactly* what you tell it to do, even if that's not what you *wanted* it to
 do.
 
+( for jsfiddle, there is a dropdown at the top that says "top", change that to
+"result (fiddle jshell.net) to use the dev. console )
+
 ## Variables
 
 After playing around with several instructions, we can't really do much. We
