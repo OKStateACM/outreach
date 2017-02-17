@@ -12,7 +12,7 @@
 	* *height* the height of the rectangle
 * **context.fillStyle = "red"** - sets the color for following drawing commands
 	* the color can be a color like "red"/"blue"/"green", but that only works for *some* colors, not *every color*
-	* for other colors, we need to use "hex codes". 
+	* for other colors, we need to use "hex codes". We can use [http://www.color-hex.com/color-wheel/](http://www.color-hex.com/color-wheel/) to find these 'hex values' for any color we want
 * **context.drawImage( image, x, y )** - draw an image on the canvas
 	* *image* - an image that you loaded earlier (ex `var robot=document.getElementById("robotImage")` )
 	* *x* - the horizontal position on the canvas to draw the image
