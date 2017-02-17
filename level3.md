@@ -14,6 +14,7 @@ at its core, a computer is a simple machine. We give a computer **code** and it
 works by doing **exactly** what the code says to do. 
 
 **Code** is just a *list of instructions* that tell the computer what to do.
+The computer, in turn, does *each instructions* **in order**, one at a time.
 And all a computer *can* do is that list of instructions, nothing else.
 
 ## Our situation
@@ -24,7 +25,7 @@ computer, but it isn't the same as the desktop's in the lab.
 
 For our stuff, we will be using **JavaScript** which is a programming language.
 (a language is just a way to tell the computer what to do - in other words,
-each language has different *instructions*, and different *syntax*)
+each language has different *instructions*, and different *syntax* or grammar)
 
 We've learned about HTML and the basic structure of web pages in level 0, as
 well as some basic JavaScript in level 1.
@@ -40,7 +41,7 @@ website aimed to make coding and sharing small snippets of code easy.
 
 Follow this link:
 
-[https://jsfiddle.net/mt55g1a2/](https://jsfiddle.net/mt55g1a2/)
+[https://jsfiddle.net/mt55g1a2/1/](https://jsfiddle.net/mt55g1a2/1/)
 
 ## Drawing stuff on the canvas
 
@@ -50,7 +51,7 @@ memorize everything. Reference that, and the code we made in level 1 to draw
 some things on the screen!
 
 ```javascript
-// *magic*
+// *magic* (don't worry about these two lines)
 var canvas = document.getElementById("myCanvas")
 drawing = canvas.getContext("2d")
 
@@ -82,10 +83,10 @@ do.
 
 ## Variables
 
-After playing around with several instructions, we can't really do much. We
-need the computer to keep track of things, like the ship's position or speed.
-**variables** allow us to do that. We can think of them as boxes that we can
-put things into.
+After playing around with several instructions, we can't really do much. One
+thing we need is the computer to keep track of things, like the ship's position
+or speed in our previous examples. **variables** allow us to do that. We can
+think of them as boxes that we can put things into.
 
 ```javascript
 var myName // this *instruction* tells the computer to reserve a new box, and name it "myName"
@@ -95,13 +96,15 @@ myName = "Alex" // this *instruction* tells the computer to put the word "Alex" 
 To make sure we understand how these are working, lets look at an example.
 We're going to make a new variable, and do a series of *instructions*. At the
 end, there will be a *value* inside the variable. Try to figure out what that
-value is, we can use the *console*
+value is on your own! we can also use the *console* to tell us.
 
 ```javascript
 var A_Box = 20
 A_Box = (1+3)*2
 console.log(A_Box)  // this command will show the *value* in A_Box in the
-console
+console.log("hello!") //we can show all sorts fo things!
+console.log( 20/6 ) // like numbers
+console.log( console ) // what is this??
 ```
 
 ```javascript
@@ -109,6 +112,14 @@ var number = 20
 number = 10
 number = number + 5
 // what is in the box labeled "number" now??
+```
+
+``` javascript
+var x = 20
+var y = 3
+var z = 1
+z = x/(z + y) //what is z? remember that the computer does *one thing at a time*, so we can always break down a complicated statement into smaller chunks
+             // Also note that the computer does *the bit on the right*, doing any work/computation necessary, **then** store the final result in the variable
 ```
 
 Anywhere in our code that we would type a number, a "string of text", or any
@@ -125,13 +136,16 @@ drawing.fillRect(x, y, 10, 10)
 
 ## Logic and `if` statements
 
-We can use variables now, but unfortunately, we are still stuck with a fixed execution. Our code always does the same thing. Not very interesting. We are going to need to add *logic* to our code.
+We can use variables now, but unfortunately, we are still stuck with a fixed execution. Our code always does the same thing. Not very interesting. We are going to need to add *logic* to our code. let's talk about the `if` statement. It works like this:
+
+**if** something is true, **then** it will do something. (if it's not true, it doesn't do anything)
 
 An `if` statement takes up more than a single line of code, unlike everything else we've seen! Here's the structure of an `if` statement and what it looks like:
 
 ```javascript
 if ( **some condition that may or may not be true** ) {
 	// and here we have more code, inbetween the *{* and *}*
+	// this is the **then** part.
 	// like, drawing a rectangle!
 	drawing.fillRect(0, 0, 100, 100)
 }
@@ -160,3 +174,9 @@ Walking through this example above: The computer calculates 1+3 (which is 4),
 then it check if that number (4) is the same as 5. This is *not* true. In other
 words, it is **false**, so it **skips over the entire `{ }` section** unlike
 before.
+
+# Building the spaceship example:
+
+starter code on jsfiddle:
+
+[https://jsfiddle.net/hpnbutjb/](https://jsfiddle.net/hpnbutjb/)
